@@ -33,7 +33,7 @@ body {
     margin-bottom: 7rem;
     background-color: var(--rose-white);
     border-radius: 12px;
-    box-shadow: 12px 12px;
+    box-shadow: h-shadow v-shadow blur spread color inset;
 }
 
 #omelette-image {

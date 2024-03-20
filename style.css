@@ -27,13 +27,13 @@ body {
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    width: 70%;
+    width: 40%;
     padding: 15px;
     margin-top: 7rem;
     margin-bottom: 7rem;
     background-color: var(--rose-white);
     border-radius: 12px;
-    box-shadow: 12px 12px;
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.244);
 }
 
 #omelette-image {
