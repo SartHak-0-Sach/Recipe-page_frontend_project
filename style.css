@@ -1,202 +1,117 @@
-/* Font Define */
-@font-face {
-    font-family: "Young-Serif";
-    src: url(./../assets/fonts/young-serif/YoungSerif-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
-@font-face {
-    font-family: "Outfit";
-    src: url(./../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
-}
-
-/* end of Font Define*/
-
-/* Variable */
 :root {
-    --nutmeg: hsl(14, 45%, 36%);
-    --dark-raspberry: hsl(332, 51%, 32%);
-    --white: hsl(0, 0%, 100%);
-    --rose-white: hsl(330, 100%, 98%);
-    --eggshell: hsl(30, 54%, 90%);
-    --light-grey: hsl(30, 18%, 87%);
-    --wenge-brown: hsl(30, 10%, 34%);
-    --dark-charcoal: hsl(24, 5%, 18%);
-    --young-serif: "Young-Serif";
-    --outfit: "Outfit";
+    --white: #ffffff;
+    --rose-white: #fff5fa;
+    --eggshell: #f3e6d8;
+    --light-grey: #e4ded8;
+    --wenge-brown: #5f574e;
+    --dark-charcoal: #302d2c;
 }
 
-/* end of Variable */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Outfit, Young-serif;
+    color: var(--wenge-brown);
 }
 
 body {
-    padding-top: 7.813rem;
-    padding-bottom: 7.813rem;
     background-color: var(--eggshell);
 }
 
-main {
-    max-width: 50rem;
-    margin: 0 auto;
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: 1.5rem;
+.mainframe {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background-color: var(--rose-white);
+    border-radius: 12px;
+    box-shadow: 8px 8px 17px rgba(0, 0, 0, 0.244);
 }
 
-section.hero--section img {
+#omelette-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
     width: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
 }
 
-.container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#omelette-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
 }
 
-.pb--not {
-    padding-bottom: 0;
+.preparation {
+    padding-left: 20px;
 }
 
-:where(.instructions, .ingredients) {
-    border-bottom: 1px solid var(--light-grey);
-}
-
-h1 {
-    font-family: var(--young-serif);
-    font-size: 2rem;
-    letter-spacing: 0.125rem;
-    line-height: 1.5;
-    color: var(--dark-charcoal);
+.preparation h4 {
+    color: purple;
 }
 
 h2 {
-    font-family: var(--young-serif);
-    font-size: 1.875rem;
-    line-height: 1;
-    font-weight: 400;
-    color: var(--nutmeg);
-    margin-bottom: .5rem;
+    color: #a12f2f;
 }
 
-h3 {
-    font-family: var(--outfit);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    color: var(--dark-raspberry);
+.preparation #Preparation-time {
+    list-style-type: none;
 }
 
-p {
-    font-family: var(--outfit);
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--wenge-brown);
+.preparation #Preparation-time ul {
+    padding-left: 20px;
+    list-style: disc;
 }
 
-.rose--white {
-    background: var(--rose-white);
-    padding: 1rem 2rem;
-    border-radius: 0.625rem;
+#Ingredients-list {
+    list-style-type: none;
 }
 
-.rose--white h3 {
-    margin-bottom: .5rem;
+#Ingredients-list ul {
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
-ul {
-    margin-left: 1rem;
+.instructions {
+    list-style-type: decimal;
+    /* padding-left: 20px; */
 }
 
-:where(.ingredients, .rose--white) ul li::marker,
-ol li::marker {
-    color: var(--dark-raspberry);
+.instruction b {
+    color: #a12f2f;
 }
 
-:where(ul, ol) li {
-    font-family: var(--outfit);
-    font-size: 1rem;
-    line-height: 1.5;
-    padding-left: 1.5rem;
-    color: var(--wenge-brown);
+#instructions-heading {
+    list-style-type: none;
 }
 
-.ingredients ul,
-ol {
-    margin-left: 1.5rem;
+#instructions-heading .instruction {
+    margin-left: 20px;
+    padding-left: 10px;
 }
 
-.instructions ol li {
-    margin-bottom: 0.5rem;
-}
-
-table {
-    width: 100%;
-    font-family: var(--outfit);
-    padding-top: 1.5rem;
-}
-
-table tr {
-    font-family: var(--outfit);
-    font-size: 1rem;
-    line-height: 1.5;
-
-}
-
-table tr td:first-child {
-    color: var(--wenge-brown);
-}
-
-table tr td:last-child {
-    color: var(--nutmeg);
-}
-
-tr td {
-    padding: 1rem 2rem;
-}
-
-tr:not(:last-child) td {
-    border-bottom: 1px solid var(--light-grey);
-}
-
-/* Mobile Device */
-@media(max-width: 500px) {
-    body {
-        padding: 0;
+@media only screen and (max-width: 500px) {
+    .mainframe {
+        width: 60%;
     }
+}
 
-    main {
+@media only screen and (max-width: 400px) {
+    .mainframe {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .mainframe {
         width: 100%;
-        padding: 0;
-        border-radius: 0;
-    }
-
-    section.hero--section img {
-        border-radius: 0;
-    }
-
-    section.content {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    h1 {
-        font-size: 1.875rem;
-        line-height: 1.25;
-        margin-bottom: 1.25rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    ul {
-        margin-left: 2.15rem;
-    }
-
-    :where(ul, ol) li {
-        padding-left: 1.08rem;
     }
 }

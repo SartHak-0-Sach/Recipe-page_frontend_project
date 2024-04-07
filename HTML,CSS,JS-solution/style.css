@@ -27,7 +27,7 @@ body {
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     padding: 15px;
     margin-top: 7rem;
     margin-bottom: 7rem;
@@ -50,15 +50,15 @@ body {
     border-radius: inherit;
 }
 
-.preparation{
+.preparation {
     padding-left: 20px;
 }
 
-.preparation h4{
+.preparation h4 {
     color: purple;
 }
 
-h2{
+h2 {
     color: #a12f2f;
 }
 
@@ -71,29 +71,47 @@ h2{
     list-style: disc;
 }
 
-#Ingredients-list{
+#Ingredients-list {
     list-style-type: none;
 }
 
-#Ingredients-list ul{
+#Ingredients-list ul {
     padding-left: 20px;
     list-style-type: disc;
 }
 
-.instructions{
+.instructions {
     list-style-type: decimal;
     /* padding-left: 20px; */
 }
 
-.instruction b{
+.instruction b {
     color: #a12f2f;
 }
 
-#instructions-heading{
+#instructions-heading {
     list-style-type: none;
 }
 
-#instructions-heading .instruction{
+#instructions-heading .instruction {
     margin-left: 20px;
     padding-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .mainframe {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainframe {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .mainframe {
+        width: 100%;
+    }
 }
