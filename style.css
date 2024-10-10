@@ -98,6 +98,18 @@ h2 {
     padding-left: 10px;
 }
 
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underlined;
+}
+
 @media only screen and (max-width: 500px) {
     .mainframe {
         width: 60%;
